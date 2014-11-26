@@ -85,7 +85,7 @@ Each element of positionmap is an index position or None.  Needed because not al
   row = next(lines)
   if not positionmap: positionmap = range(len(row))
   while not isempty(row):
-    yield [row[x] if x else "" for x in positionmap if x < len(row)]
+    yield [row[x] if x != '' and x != None else "" for x in positionmap if x < len(row)]
     row = next(lines) 
 
 def columndescriptors(lines):

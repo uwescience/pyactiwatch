@@ -11,5 +11,5 @@ $ python pyactiwatch.py <file pattern>
 ```
 Example:
 ```
-$ python pyactiwatch.py sleep/*.csv
+$ python pyactiwatch.py "sleep/*.csv"
 ```

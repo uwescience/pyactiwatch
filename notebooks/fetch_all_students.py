@@ -16,7 +16,7 @@ for row in students["sample_data"]:
   print studentid, dat["exec_time"], dat["rows_total"]
   sfile = open("%s.csv" % studentid,"w")
   names = [d["name"] for d in dat["columns"]]
-  sfile.write(",".join(names))
+  sfile.write(",".join(names) + "\n")
   for dayrow in dat["sample_data"]:
    sfile.write(",".join([str(x) for x in dayrow]) + "\n")
   sfile.close()
